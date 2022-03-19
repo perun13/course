@@ -231,6 +231,7 @@ header {
   width: 328px;
   height: 52px;
   background: #00FF00;
+  color: black;
   border-radius: 30px;
   margin-left: 102px;
   margin-top: 35px;
@@ -852,6 +853,7 @@ header {
   font-weight: 400;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  color: #222222;
 }
 
 .box_8 button:hover {
@@ -869,6 +871,8 @@ header {
   opacity: 1;
   -webkit-transition: .3s;
   transition: .3s;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 footer {
@@ -1114,7 +1118,7 @@ footer {
     top: 0;
     left: 0;
     width: 768px;
-    z-index: 1;
+    z-index: 4;
     -webkit-transform: translate(-100%, 0px);
             transform: translate(-100%, 0px);
     background-color: black;
@@ -1131,6 +1135,7 @@ footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-left: -186px;
   }
   .header .nav_burger._active {
     -webkit-transform: translate(0%, 0px);
@@ -1259,7 +1264,7 @@ footer {
     height: 595px;
   }
   .box_1 .wrapper .content {
-    z-index: 4;
+    z-index: 2;
   }
   .box_1 .wrapper .content .text {
     padding-left: 0;
@@ -1430,6 +1435,9 @@ footer {
   }
   .box_7 .box_7_swiper .mobile {
     margin-left: 0;
+  }
+  .box_8 button {
+    left: 68%;
   }
   .footer .last_text {
     left: 19%;
