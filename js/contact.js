@@ -1,3 +1,17 @@
+let btn = document.querySelector('#btn');
+let name = document.querySelector('.name');
+let email = document.querySelector('.email');
+let message = document.querySelector('.message');
+
+btn.onclick = myClick;
+
+function myClick() {
+    email.value = " ";
+    name.value = '';
+    message.value = '';
+};
+
+
 const isMobile = {
     Android: function () {
         return navigator.userAgent.match(/Android/i);
@@ -41,7 +55,6 @@ if (headerBurger) {
         navBurger.classList.toggle('_active');
     });
 };
-
 
 let search = document.querySelector('.search');
 let search_box = document.querySelector('.search_box');

@@ -1,3 +1,13 @@
+let search = document.querySelector('.search');
+let search_box = document.querySelector('.search_box');
+
+search.onclick = () => {
+    search_box.classList.toggle('__active');
+};
+document.getElementById('btn_search').onclick = () => {
+    search_box.classList.remove('__active');
+};
+
 const isMobile = {
     Android: function () {
         return navigator.userAgent.match(/Android/i);
@@ -42,13 +52,3 @@ if (headerBurger) {
     });
 };
 
-
-let search = document.querySelector('.search');
-let search_box = document.querySelector('.search_box');
-
-search.onclick = () => {
-    search_box.classList.toggle('__active');
-};
-document.getElementById('btn_search').onclick = () => {
-    search_box.classList.remove('__active');
-};

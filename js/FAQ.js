@@ -1,17 +1,58 @@
-let commentName = document.querySelector('.name');
-let body = document.querySelector('.body');
-let btn = document.querySelector('.btn');
+let arrow = document.querySelector('#arrow');
+let arrow_up = document.querySelector('#arrow_up');
 
+let more = document.querySelector('.more');
 
-btn.onclick = myClick;
-function myClick() {
-    document.querySelector('.comment_info').innerHTML = commentName.value;
-    document.querySelector('.comment_body').innerHTML = body.value;
+let item = document.querySelector('.item_more');
 
+arrow.onclick = () => {
+    more.classList.toggle('__active');
 
-    commentName.value = '';
-    body.value = '';
+    item.style.marginBottom = '260px';
+
+    document.querySelector('#title').style.marginTop = '25px';
+
+    if (more.classList.contains('__active')) {
+        arrow.style.display = "none";
+        arrow_up.style.display = "block";
+    }
+
+    else {
+        arrow.style.display = "block";
+        arrow_up.style.display = "none";
+    }
 };
+
+
+arrow_up.onclick = () => {
+    arrow.style.display = "block";
+    arrow_up.style.display = "none";
+
+    more.classList.remove('__active');
+
+    item.style.marginBottom = '0';
+
+    document.querySelector('#title').style.marginTop = '0';
+}
+
+
+
+
+
+let search = document.querySelector('.search');
+let search_box = document.querySelector('.search_box');
+
+search.onclick = () => {
+    search_box.classList.toggle('__active');
+};
+document.getElementById('btn_search').onclick = () => {
+    search_box.classList.remove('__active');
+};
+
+
+
+
+
 const isMobile = {
     Android: function () {
         return navigator.userAgent.match(/Android/i);
@@ -53,18 +94,6 @@ if (headerBurger) {
         document.body.classList.toggle('_lock');
         headerBurger.classList.toggle('_active');
         navBurger.classList.toggle('_active');
+        headerBurger.style.display = "fixed";
     });
-};
-
-
-
-
-let search = document.querySelector('.search');
-let search_box = document.querySelector('.search_box');
-
-search.onclick = () => {
-    search_box.classList.toggle('__active');
-};
-document.getElementById('btn_search').onclick = () => {
-    search_box.classList.remove('__active');
 };

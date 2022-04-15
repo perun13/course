@@ -1,4 +1,5 @@
 @import url(../../dist/css/nullstyle.css);
+@import url(../../dist/css/search.css);
 body {
   font-family: 'Oswald', sans-serif;
   font-family: 'Roboto', sans-serif;
@@ -182,7 +183,7 @@ header {
 }
 
 .box_1 .content i {
-  border: solid  gray;
+  border: solid gray;
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
@@ -830,11 +831,11 @@ footer {
     font-size: 60px;
   }
   .header .nav_burger {
-    position: absolute;
+    position: fixed;
     height: 100%;
     top: 0;
     left: 0;
-    width: 768px;
+    width: 100%;
     z-index: 1;
     -webkit-transform: translate(-100%, 0px);
             transform: translate(-100%, 0px);
@@ -843,16 +844,19 @@ footer {
     -webkit-transition: left 0.3s ease 0s;
     transition: left 0.3s ease 0s;
     overflow: auto;
-    display: -ms-grid;
-    display: grid;
-    -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
-    justify-items: center;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-    padding-left: 95px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .header .nav_burger._active {
     -webkit-transform: translate(0%, 0px);

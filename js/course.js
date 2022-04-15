@@ -9,13 +9,11 @@ new Swiper('.image-slider', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
     },
-    spaceBetween: 30,
-    slidesPerGroup: 1,
     centeredSlides: true,
     initialSlide: 0,
 
 });
-new Swiper('.box_7_swiper', {
+new Swiper('.slider_1', {
     pagination: {
         el: '.swiper-pagination',
 
@@ -26,16 +24,25 @@ new Swiper('.box_7_swiper', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
     },
-    autoplay: {
-        deley: 8000,
-    },
-    spaceBetween: 30,
-    slidesPerGroup: 1,
     centeredSlides: true,
     initialSlide: 0,
 
 });
+new Swiper('.slider_2', {
+    pagination: {
+        el: '.swiper-pagination',
 
+        clickable: true,
+
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+    },
+    centeredSlides: true,
+    initialSlide: 0,
+
+});
 
 const isMobile = {
     Android: function () {
@@ -83,24 +90,6 @@ if (headerBurger) {
 };
 
 
-
-let btnOpen = document.getElementById('btn');
-
-var more = document.getElementById("more");
-
-
-btnOpen.onclick = () => {
-    more.classList.toggle('__active');
-    if (more.classList.contains('__active')) {
-        btnOpen.innerHTML = "Скрыть";
-    }
-    else {
-        btnOpen.innerHTML = "Развернуть";
-    }
-}
-
-
-
 let search = document.querySelector('.search');
 let search_box = document.querySelector('.search_box');
 
@@ -110,23 +99,3 @@ search.onclick = () => {
 document.getElementById('btn_search').onclick = () => {
     search_box.classList.remove('__active');
 };
-
-
-// function readMore() {
-//     var dots = document.getElementById("dots");
-//     var btn = document.getElementById("btn");
-//     let bottom = document.querySelector('.bottom');
-
-//     if (dots.style.display === "none") {
-//         dots.style.display = "inline";
-//         btn.innerHTML = "Развернуть";
-//         more.style.display = "none";
-//         bottom.style.display = "block";
-//     }
-//     else {
-//         dots.style.display = "none";
-//         btn.innerHTML = "Скрыть";
-//         more.style.display = "inline";
-//         bottom.style.display = "none";
-//     }
-// }
