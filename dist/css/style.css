@@ -883,8 +883,8 @@ header {
 .box_8 .bottom {
   position: absolute;
   bottom: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(225, 225, 225, 0)), color-stop(65%, #e1e1e1));
-  background: linear-gradient(to bottom, rgba(225, 225, 225, 0), #e1e1e1 65%);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(225, 225, 225, 0)), to(#9b9a9a));
+  background: linear-gradient(to bottom, rgba(225, 225, 225, 0), #9b9a9a);
   width: 100%;
   height: 60px;
   opacity: 1;
