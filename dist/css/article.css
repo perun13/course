@@ -657,6 +657,7 @@ footer {
 .footer .top .contact .item .number {
   font-weight: 700;
   margin-left: 0;
+  color: white;
 }
 
 .footer .top .contact .item .rusion .top_part {
@@ -1003,9 +1004,10 @@ footer {
     width: auto !important;
   }
   .box_4 .content .search button {
-    width: 199px;
+    width: 160px;
+    margin-left: -150px;
   }
   .box_4 .content .search input {
-    width: 365px;
+    width: 300px;
   }
 }

@@ -539,6 +539,7 @@ footer {
 .footer .top .contact .item .number {
   font-weight: 700;
   margin-left: 0;
+  color: white;
 }
 
 .footer .top .contact .item .rusion .top_part {
@@ -867,6 +868,6 @@ footer {
   }
   .box_2 .item_more .arrow-4 {
     left: 243px !important;
-    top: -55px;
+    top: -43px;
   }
 }

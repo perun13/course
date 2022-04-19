@@ -88,9 +88,12 @@ let btnOpen = document.getElementById('btn');
 
 var more = document.getElementById("more");
 
+let bottom = document.querySelector('.bottom');
+
 
 btnOpen.onclick = () => {
     more.classList.toggle('__active');
+    bottom.classList.toggle('__active');
     if (more.classList.contains('__active')) {
         btnOpen.innerHTML = "Скрыть";
     }

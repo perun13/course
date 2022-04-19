@@ -243,6 +243,7 @@ body a {
   margin-bottom: 16px;
   font-size: 18px;
   list-style: square;
+  color: black;
 }
 
 .box_2 ul .info {
@@ -314,6 +315,7 @@ footer {
 .footer .top .contact .item .number {
   font-weight: 700;
   margin-left: 0;
+  color: white;
 }
 
 .footer .top .contact .item .rusion .top_part {

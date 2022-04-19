@@ -244,6 +244,7 @@ body a {
 .box_2 .left .info .number .item .number {
   font-weight: 700;
   margin-left: 0;
+  color: white;
 }
 
 .box_2 .left .info .number .item .rusion .top_part {
@@ -427,6 +428,7 @@ footer {
 
 .footer .top .contact .item .number {
   font-weight: 700;
+  color: white;
   margin-left: 0;
 }
 

@@ -894,6 +894,10 @@ header {
   padding-right: 0;
 }
 
+.box_8 .bottom.__active {
+  width: 0;
+}
+
 footer {
   background: #222222;
 }
@@ -957,6 +961,7 @@ footer {
 .footer .top .contact .item .number {
   font-weight: 700;
   margin-left: 0;
+  color: white;
 }
 
 .footer .top .contact .item .rusion .top_part {
@@ -1467,6 +1472,9 @@ footer {
   }
   .box_7 .box_7_swiper .mobile {
     margin-left: 0;
+  }
+  .box_8 #more.__active {
+    height: 185px;
   }
   .box_8 button {
     left: 68%;
